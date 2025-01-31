@@ -12,3 +12,18 @@
 body{
     background-color: #FAFBFF;
 }
+
+.customerstable tr{
+    height: 70px;
+    border-bottom: 1px solid #EEEEEE;
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+
+}
+
+.customerstable th{
+    color: #B5B7C0;
+    text-align: left;
+    font-weight: 500;
+}

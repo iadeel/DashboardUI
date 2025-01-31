@@ -11,6 +11,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import dp from "../images/dp.png";
 
 const SideBar = () => {
+
   return (
     <>
       <div className="bg-white shadow-lg h-[1198px] sidebar p-[20px] flex flex-col justify-between items-center gap-7 w-[306px]">
@@ -21,7 +22,7 @@ const SideBar = () => {
               Dashboard <span className="text-[10px] text-gray-500">v.01</span>
             </h1>
           </div>
-          <div className="menuitems flex flex-col gap-[30px]">
+          <div className="menuitems flex flex-col gap-[20px]">
             <MenuItem
               logo={<CgKeyhole  />}
               title={"Dashboard"}
@@ -32,7 +33,7 @@ const SideBar = () => {
               title={"Product"}
               arrow={<IoIosArrowForward />}
             />
-            <MenuItem className="text-2xl"
+            <MenuItem
               logo={<LuCircleUser />}
               title={"Customer"}
               arrow={<IoIosArrowForward />}
