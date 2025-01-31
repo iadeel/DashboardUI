@@ -13,44 +13,44 @@ import dp from "../images/dp.png";
 const SideBar = () => {
   return (
     <>
-      <div className="sidebar p-[20px] flex flex-col justify-between gap-12">
-        <div className="upperdiv">
+      <div className="bg-white shadow-lg sidebar p-[20px] flex flex-col justify-between items-center gap-7 w-[306px]">
+        <div className="upperdiv flex flex-col gap-[20px]">
           <div className="dash_heading flex ">
             <img src={logo} className="h-[37px]" />
-            <h1>
+            <h1 className="font-extrabold">
               Dashboard <span>v.01</span>{" "}
             </h1>
           </div>
           <div className="menuitems flex flex-col gap-5">
             <MenuItem
-              logo={<CgKeyhole color="grey" size={24} />}
+              logo={<CgKeyhole  />}
               title={"Dashboard"}
               arrow={""}
             />
             <MenuItem
               logo={<FiPackage color="grey" size={24} />}
               title={"Product"}
-              arrow={<IoIosArrowForward />}
+              arrow={<IoIosArrowForward color="grey" />}
             />
             <MenuItem
               logo={<LuCircleUser color="grey" size={24} />}
               title={"Customer"}
-              arrow={<IoIosArrowForward />}
+              arrow={<IoIosArrowForward color="grey" />}
             />
             <MenuItem
               logo={<RiMoneyDollarCircleLine color="grey" size={24} />}
               title={"Income"}
-              arrow={<IoIosArrowForward />}
+              arrow={<IoIosArrowForward  color="grey" />}
             />
             <MenuItem
               logo={<TbCirclePercentage color="grey" size={24} />}
               title={"Promote"}
-              arrow={<IoIosArrowForward />}
+              arrow={<IoIosArrowForward color="grey" />}
             />
             <MenuItem
               logo={<MdHelpOutline color="grey" size={24} />}
               title={"Help"}
-              arrow={<IoIosArrowForward />}
+              arrow={<IoIosArrowForward  color="grey" />}
             />
           </div>
         </div>
@@ -70,7 +70,7 @@ const SideBar = () => {
               </div>
             </div>
             <div className="account-arrow">
-              <IoIosArrowDown />
+              <IoIosArrowDown color="grey" />
             </div>
           </div>
         </div>
