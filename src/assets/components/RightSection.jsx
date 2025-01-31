@@ -9,7 +9,7 @@ import { FaArrowDown } from "react-icons/fa";
 const RightSection = () => {
   return (
     <>
-      <div className="rightsection p-[50px] w-[1134px] flex flex-col gap-[40px]">
+      <div className="rightsection p-[50px] w-full flex flex-col gap-[40px]">
         <div className="header flex justify-between ">
           <h1 className="text-[24px] font-[400]">Hello Evano 👋🏼,</h1>
           <div className="search flex items-center rounded-[12px] bg-white h-[38px] w-[216px] px-[10px]">
