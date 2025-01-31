@@ -8,45 +8,73 @@ import { TbCirclePercentage } from "react-icons/tb";
 import { MdHelpOutline } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import dp from '../images/dp.png'
+import dp from "../images/dp.png";
 
 const SideBar = () => {
   return (
     <>
-    <div className="sidebar flex flex-col justify-center">
-
-      <div className="upperdiv">
-        <div className="dash_heading flex ">
-          <img src={logo} className="h-[37px]" />
-          <h1>
-            Dashboard <span>v.01</span>{" "}
-          </h1>
+      <div className="sidebar p-[20px] flex flex-col justify-between gap-12">
+        <div className="upperdiv">
+          <div className="dash_heading flex ">
+            <img src={logo} className="h-[37px]" />
+            <h1>
+              Dashboard <span>v.01</span>{" "}
+            </h1>
+          </div>
+          <div className="menuitems flex flex-col gap-5">
+            <MenuItem
+              logo={<CgKeyhole color="grey" size={24} />}
+              title={"Dashboard"}
+              arrow={""}
+            />
+            <MenuItem
+              logo={<FiPackage color="grey" size={24} />}
+              title={"Product"}
+              arrow={<IoIosArrowForward />}
+            />
+            <MenuItem
+              logo={<LuCircleUser color="grey" size={24} />}
+              title={"Customer"}
+              arrow={<IoIosArrowForward />}
+            />
+            <MenuItem
+              logo={<RiMoneyDollarCircleLine color="grey" size={24} />}
+              title={"Income"}
+              arrow={<IoIosArrowForward />}
+            />
+            <MenuItem
+              logo={<TbCirclePercentage color="grey" size={24} />}
+              title={"Promote"}
+              arrow={<IoIosArrowForward />}
+            />
+            <MenuItem
+              logo={<MdHelpOutline color="grey" size={24} />}
+              title={"Help"}
+              arrow={<IoIosArrowForward />}
+            />
+          </div>
         </div>
-        <div className="menuitems flex flex-col gap-5">
-            <MenuItem  logo={<CgKeyhole color="grey" size={24} />} title={"Dashboard"} arrow={""} />
-            <MenuItem  logo={<FiPackage  color="grey" size={24}  />} title={"Product"} arrow={<IoIosArrowForward />} />
-            <MenuItem  logo={<LuCircleUser color="grey" size={24}   />} title={"Customer"} arrow={<IoIosArrowForward />} />
-            <MenuItem  logo={<RiMoneyDollarCircleLine color="grey" size={24}  />} title={"Income"} arrow={<IoIosArrowForward />} />
-            <MenuItem  logo={<TbCirclePercentage color="grey" size={24}  />} title={"Promote"} arrow={<IoIosArrowForward />} />
-            <MenuItem  logo={<MdHelpOutline color="grey" size={24}  />} title={"Help"} arrow={<IoIosArrowForward />} />
-        </div>
-      </div>
-      <div className="lowerdiv">
-
-        <div className="flex flex-col gap-[30px]  probox bg-gradient-to-r from-[#EAABF0] to-[#4623E9] w-[250px] h-150px p-[20px]">
+        <div className="lowerdiv flex flex-col gap-5">
+          <div className="flex items-center text-center rounded-4xl flex-col gap-[30px]  probox bg-gradient-to-r from-[#EAABF0] to-[#4623E9] w-[250px] h-150px p-[20px]">
             <p>Upgrade to PRO to get access all Features!</p>
-            <button className="bg-white text-blue-900 rounded-4xl w-[203px] h-[40px]">Get Pro Now!</button>
-        </div>
-        <div className="accountinfo">
-            <img src={dp} />
-            <div className="accountname">
+            <button className="bg-white text-blue-900 rounded-4xl w-[203px] h-[40px]">
+              Get Pro Now!
+            </button>
+          </div>
+          <div className="accountinfo w-[250px] justify-between flex items-center gap-2.5">
+            <div className="account-left flex gap-2.5">
+              <img src={dp} className="w-[42px]" />
+              <div className="accountname">
                 <h2>Evano</h2>
                 <p>Project Manager</p>
+              </div>
             </div>
-            <IoIosArrowDown />
+            <div className="account-arrow">
+              <IoIosArrowDown />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 };
