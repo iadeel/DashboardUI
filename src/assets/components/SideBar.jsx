@@ -13,51 +13,51 @@ import dp from "../images/dp.png";
 const SideBar = () => {
   return (
     <>
-      <div className="bg-white shadow-lg sidebar p-[20px] flex flex-col justify-between items-center gap-7 w-[306px]">
-        <div className="upperdiv flex flex-col gap-[20px]">
-          <div className="dash_heading flex ">
+      <div className="bg-white shadow-lg h-[1198px] sidebar p-[20px] flex flex-col justify-between items-center gap-7 w-[306px]">
+        <div className="upperdiv flex flex-col gap-[50px]">
+          <div className="dash_heading font-bold flex gap-2.5 items-center text-[26px]">
             <img src={logo} className="h-[37px]" />
-            <h1 className="font-extrabold">
-              Dashboard <span>v.01</span>{" "}
+            <h1 className="">
+              Dashboard <span className="text-[10px] text-gray-500">v.01</span>
             </h1>
           </div>
-          <div className="menuitems flex flex-col gap-5">
+          <div className="menuitems flex flex-col gap-[30px]">
             <MenuItem
               logo={<CgKeyhole  />}
               title={"Dashboard"}
               arrow={""}
             />
             <MenuItem
-              logo={<FiPackage color="grey" size={24} />}
+              logo={<FiPackage />}
               title={"Product"}
-              arrow={<IoIosArrowForward color="grey" />}
+              arrow={<IoIosArrowForward />}
             />
-            <MenuItem
-              logo={<LuCircleUser color="grey" size={24} />}
+            <MenuItem className="text-2xl"
+              logo={<LuCircleUser />}
               title={"Customer"}
-              arrow={<IoIosArrowForward color="grey" />}
+              arrow={<IoIosArrowForward />}
             />
             <MenuItem
-              logo={<RiMoneyDollarCircleLine color="grey" size={24} />}
+              logo={<RiMoneyDollarCircleLine />}
               title={"Income"}
-              arrow={<IoIosArrowForward  color="grey" />}
+              arrow={<IoIosArrowForward />}
             />
             <MenuItem
-              logo={<TbCirclePercentage color="grey" size={24} />}
+              logo={<TbCirclePercentage />}
               title={"Promote"}
-              arrow={<IoIosArrowForward color="grey" />}
+              arrow={<IoIosArrowForward />}
             />
             <MenuItem
-              logo={<MdHelpOutline color="grey" size={24} />}
+              logo={<MdHelpOutline />}
               title={"Help"}
-              arrow={<IoIosArrowForward  color="grey" />}
+              arrow={<IoIosArrowForward />}
             />
           </div>
         </div>
         <div className="lowerdiv flex flex-col gap-5">
-          <div className="flex items-center text-center rounded-4xl flex-col gap-[30px]  probox bg-gradient-to-r from-[#EAABF0] to-[#4623E9] w-[250px] h-150px p-[20px]">
-            <p>Upgrade to PRO to get access all Features!</p>
-            <button className="bg-white text-blue-900 rounded-4xl w-[203px] h-[40px]">
+          <div className="flex items-center text-center rounded-4xl flex-col gap-[30px]  probox bg-gradient-to-r from-[#EAABF0] to-[#4623E9] w-[250px] h-150px p-[25px]">
+            <p className="text-[14px] font-[600] text-white">Upgrade to PRO to get access all Features!</p>
+            <button className="bg-white text-blue-900 rounded-4xl w-[203px] h-[40px] text-[14px] font-[600]">
               Get Pro Now!
             </button>
           </div>
@@ -65,8 +65,8 @@ const SideBar = () => {
             <div className="account-left flex gap-2.5">
               <img src={dp} className="w-[42px]" />
               <div className="accountname">
-                <h2>Evano</h2>
-                <p>Project Manager</p>
+                <h2 className="font-bold text-[14px]">Evano</h2>
+                <p className="text-[12px]">Project Manager</p>
               </div>
             </div>
             <div className="account-arrow">

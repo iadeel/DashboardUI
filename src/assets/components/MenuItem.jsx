@@ -7,7 +7,7 @@ const MenuItem = ({ logo, title, arrow }) => {
           <div className="menuItemtitle text-gray-500 text-[14px] ">{title}</div>
         </div>
         <div className="menuItem_right">
-          <div className="menuItemarrow">{arrow}</div>
+          <div className="menuItemarrow text-grey-500">{arrow}</div>
         </div>
       </div>
     </>
